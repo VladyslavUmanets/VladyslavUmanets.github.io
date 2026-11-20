@@ -160,5 +160,63 @@ button:active,
 }
 
 /* Nested list style distinct from main list */
-#services ul ul {
-  margin-top: 8px
+#services ul:not(.portfolio-filters) ul {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px 12px 8px 18px;
+  border-left: 2px dashed var(--custom-accent);
+  background-color: rgba(24, 210, 110, 0.06);
+  border-radius: 0 8px 8px 0;
+}
+
+#services ul:not(.portfolio-filters) ul > li::before {
+  content: "◆" !important;
+  color: var(--custom-accent-hover) !important;
+  font-size: 0.75rem;
+}
+
+#services ol {
+  list-style: none;
+  counter-reset: step-counter;
+  padding-left: 0;
+}
+
+#services ol > li {
+  counter-increment: step-counter;
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 10px;
+}
+
+#services ol > li::before {
+  content: counter(step-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--custom-accent);
+  font-weight: 700;
+}
+
+/* 2. Table (4x3): Header distinction, alternating/hover rows, padding, center alignment */
+#services-table table,
+#services-table th,
+#services-table td {
+  text-align: center !important;
+  vertical-align: middle !important;
+  padding: 14px 16px !important;
+}
+
+#services-table thead th {
+  background-color: #10261b !important;
+  color: var(--custom-accent-hover) !important;
+  border-bottom: 2px solid var(--custom-accent) !important;
+  font-weight: 700 !important;
+}
+
+#services-table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+#services-table tbody tr:hover {
+  background-color: rgba(24, 210, 110, 0.16) !important;
+}
