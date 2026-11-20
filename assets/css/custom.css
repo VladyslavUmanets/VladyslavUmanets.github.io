@@ -1,0 +1,164 @@
+/* ==========================================================================
+   Laboratory Work 9 - Custom Styles (HellSpace)
+   ========================================================================== */
+
+:root {
+  --custom-bg-dark: #0d1015;
+  --custom-surface: #151a22;
+  --custom-surface-alt: #1b222d;
+  --custom-border: rgba(24, 210, 110, 0.35);
+  --custom-accent: #18d26e;
+  --custom-accent-hover: #22e57c;
+  --custom-text: #eef2f6;
+  --custom-muted: #b6c2cf;
+}
+
+/* 2. Typography (font-family, headings h1-h6, paragraphs) */
+body {
+  font-family: "Poppins", "Roboto", sans-serif;
+  color: var(--custom-text);
+  background-color: var(--custom-bg-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.85rem;
+  color: var(--custom-accent);
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--custom-muted);
+}
+
+/* 3. Buttons (:hover, :active) and Links */
+a {
+  color: var(--custom-accent);
+  text-decoration: none;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+a:hover {
+  color: var(--custom-accent-hover);
+  text-decoration: underline;
+}
+
+button,
+.btn,
+[type="submit"] {
+  background-color: var(--custom-accent);
+  color: #08110c;
+  border: 2px solid var(--custom-accent);
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+button:hover,
+.btn:hover,
+[type="submit"]:hover {
+  background-color: var(--custom-accent-hover);
+  border-color: var(--custom-accent-hover);
+  color: #050a07;
+  box-shadow: 0 0 16px rgba(24, 210, 110, 0.4);
+  transform: translateY(-1px);
+}
+
+button:active,
+.btn:active,
+[type="submit"]:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 6px rgba(24, 210, 110, 0.25);
+}
+
+/* 4. Spacing (margin/padding) & Content Blocks in About, Resume, Portfolio */
+.about.section,
+.resume.section,
+.portfolio.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about .container,
+.resume .container,
+.portfolio .container {
+  margin-bottom: 16px;
+}
+
+.resume .resume-item,
+.portfolio .portfolio-content,
+.about .content {
+  background-color: var(--custom-surface);
+  border: 1px solid var(--custom-border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* 5. Two Additional Components: Navigation Menu & Scroll-to-Top Button */
+.navmenu > ul > li > a {
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.navmenu > ul > li > a:hover,
+.navmenu > ul > li > a.active {
+  background-color: rgba(24, 210, 110, 0.14);
+  color: var(--custom-accent-hover);
+}
+
+.scroll-top {
+  background-color: var(--custom-surface-alt);
+  border: 2px solid var(--custom-accent);
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+.scroll-top:hover {
+  background-color: var(--custom-accent);
+}
+
+/* ==========================================================================
+   Complementary Task (LW 8 Elements in Services)
+   ========================================================================== */
+
+/* 1. Lists: Unordered, Ordered, and Nested List */
+#services ul:not(.portfolio-filters) {
+  list-style: none;
+  padding-left: 0;
+}
+
+#services ul:not(.portfolio-filters) > li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 8px;
+}
+
+#services ul:not(.portfolio-filters) > li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--custom-accent);
+  font-weight: 700;
+}
+
+/* Nested list style distinct from main list */
+#services ul ul {
+  margin-top: 8px

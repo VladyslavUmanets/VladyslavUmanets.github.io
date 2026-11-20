@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - Personal Bootstrap Template</title>
+  <title>Services - HellSpace | Vladyslav Umanets</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,13 +26,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Custom CSS File -->
+  <link href="assets/css/custom.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
+- Template Name: Personal
+- Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+- Updated: Mar 05 2025 with Bootstrap v5.3.3
+- Author: BootstrapMade.com
+- License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
@@ -44,7 +46,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Personal</h1>
+        <h1 class="sitename">HellSpace</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -91,79 +93,175 @@
       <div class="container">
 
         <div class="row gy-4">
+<!-- Services Pricing Table (4x3) -->
+<div id="services-table" class="mt-5" data-aos="fade-up" data-aos-delay="200">
+  <h2 class="mb-3">Services Overview</h2>
+  <div class="table-responsive">
+    <table class="table table-dark table-bordered table-hover align-middle">
+      <thead>
+        <tr>
+          <th scope="col">Service</th>
+          <th scope="col">Description</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Website Development</td>
+          <td>Creation of responsive personal websites and multi-page portfolios</td>
+          <td>EUR 100</td>
+        </tr>
+        <tr>
+          <td>Template Customization</td>
+          <td>Adapting HTML/CSS templates, styles, and media to personal branding</td>
+          <td>EUR 60</td>
+        </tr>
+        <tr>
+          <td>AI Workflow Setup</td>
+          <td>Structuring prompts and organizing AI-assisted development tasks</td>
+          <td>EUR 50</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
+<!-- Lists Section (Unordered + Ordered with Nested List) -->
+<div class="row gy-4 mt-4" data-aos="fade-up" data-aos-delay="250">
+  <div class="col-lg-6">
+    <div class="p-4 border rounded h-100">
+      <h3 class="mb-3">Technologies &amp; Tools</h3>
+      <ul class="mb-0">
+        <li>HTML5, CSS3, and Bootstrap 5 for responsive web structure</li>
+        <li>
+          Visual Studio Code &amp; Git / GitHub for development and deployment
+          <ul>
+            <li>Git Bash &amp; GitHub Pages hosting</li>
+            <li>Live Server preview and code formatting</li>
+          </ul>
+        </li>
+        <li>AI tools and prompt templates for workflow optimization</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="p-4 border rounded h-100">
+      <h3 class="mb-3">Stages of Website Development</h3>
+      <ol class="mb-0">
+        <li>Planning structure, requirements, and page content</li>
+        <li>Building responsive HTML/CSS layouts and styling</li>
+        <li>Testing across browsers and publishing to GitHub Pages</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- Media Showcase (Complementary Task) -->
+<div class="mt-5" data-aos="fade-up" data-aos-delay="300">
+  <h2 class="mb-3">Media Content</h2>
+  <div class="row gy-4">
+
+    <div class="col-lg-6">
+      <div class="p-3 border rounded h-100">
+        <h4 class="h5 mb-3">Local Video (Pexels)</h4>
+        <video class="w-100 rounded" controls>
+          <source src="assets/media/typing.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="p-3 border rounded h-100">
+        <h4 class="h5 mb-3">YouTube Video</h4>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/BoUVIhtqjAw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="p-3 border rounded">
+        <h4 class="h5 mb-2">Audio Track (Pixabay)</h4>
+        <audio class="w-100" controls>
+          <source src="assets/media/clock.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+    </div>
+
+  </div>
+</div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-activity"></i>
+                <i class="bi bi-code-slash"></i>
               </div>
-              <a href="" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+              <a href="#services-table" class="stretched-link">
+                <h3>Website Development</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Building responsive personal websites, landing pages, and clean multi-page layouts using HTML5, CSS3, and Bootstrap.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-broadcast"></i>
+                <i class="bi bi-cpu"></i>
               </div>
-              <a href="" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+              <a href="#services-table" class="stretched-link">
+                <h3>AI Workflow &amp; Prompts</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Designing structured prompts and using AI tools to speed up drafting, code review, and routine task preparation.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-easel"></i>
+                <i class="bi bi-layout-text-window-reverse"></i>
               </div>
-              <a href="" class="stretched-link">
-                <h3>Ledo Markt</h3>
+              <a href="#services-table" class="stretched-link">
+                <h3>Template Customization</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Adapting existing web templates, color schemes, typography, and media assets to match personal or project branding.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
+                <i class="bi bi-graph-up"></i>
               </div>
-              <a href="" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
+              <a href="#services-table" class="stretched-link">
+                <h3>Data Plots &amp; Scripts</h3>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="" class="stretched-link"></a>
+              <p>Creating clear charts, visual diagrams, and script-based calculations for academic tasks and data exploration.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
+                <i class="bi bi-phone"></i>
               </div>
-              <a href="" class="stretched-link">
-                <h3>Velit Doloremque</h3>
+              <a href="#services-table" class="stretched-link">
+                <h3>Responsive &amp; Media Setup</h3>
               </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="" class="stretched-link"></a>
+              <p>Checking layout behavior across screen sizes and embedding images, audio, and video elements properly.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
+                <i class="bi bi-git"></i>
               </div>
-              <a href="" class="stretched-link">
-                <h3>Dolori Architecto</h3>
+              <a href="#services-table" class="stretched-link">
+                <h3>Git &amp; GitHub Publishing</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="" class="stretched-link"></a>
+              <p>Organizing project folders, tracking changes with Git, and publishing static sites via GitHub Pages.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -177,8 +275,8 @@
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
-      <h3 class="sitename">Personal</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3 class="sitename">HellSpace</h3>
+      <p>Welcome to my personal portfolio. Building modern web solutions and exploring AI.</p>
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-facebook"></i></a>
@@ -188,7 +286,7 @@
       </div>
       <div class="container">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
+          <span>Copyright</span> <strong class="px-1 sitename">HellSpace</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
